@@ -1,55 +1,39 @@
 <template>
   <div>
+    <header class="row no-gutters justify-content-between">
+        <div class="logo col-4 col-xl-1 offset-1">
+          <nuxt-link :to="{name: 'index'}">MIKIRI</nuxt-link>
+        </div>
+        <div class="col-2 col-xl-4">
+          <svg id="menu__bar" v-on:click="menu = !menu" width="23" height="23"  viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path :class="{bar1: menu}" d="M0 0.5H23" stroke="#FFE0E0"/>
+              <path :class="{bar2: menu}" d="M0 11.246H23" stroke="#FFE0E0"/>
+              <path :class="{bar3: menu}" d="M0 22H23" stroke="#FFE0E0"/>
+          </svg>            
+          <div id="menu__mobile" :class="{menu__mobileon: menu}" class="menu">
+              <nuxt-link :to="{name: 'index'}">Главная</nuxt-link>
+              <nuxt-link :to="{name: 'second'}">Анимация и Js</nuxt-link>
+              <a href="#">Векторная Графика</a>
+              <a href="#">Верстка и Api</a>
+          </div>
+        </div>
+    </header>
     <nuxt />
+    <footer class="row no-gutters justify-content-between">
+          <p class="col-1 offset-1">Mikiri@2017-2019</p>
+          <div class="col-1">
+            <i class="fab fa-github"></i>
+            <i class="fab fa-instagram"></i>
+          </div>
+    </footer>
   </div>
 </template>
-
-<style>
-html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
+<script>
+export default {
+  data(){
+    return{
+      menu:false,
+    }
+  }
 }
-
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
-}
-
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
-}
-</style>
+</script>
