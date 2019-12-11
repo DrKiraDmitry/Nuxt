@@ -6,40 +6,7 @@
     color: #f4ab42;
     text-align: center;
     padding: 50px 0;
-}
-.DeusEx svg{
-    padding: 50px 0;
-    height: 500px;
-    width: 100%;
-}
-.DeusEx path{ 
-    transition: 3s;     
-}
-.DeusExx{
-    transform: translateX(-2500px);
-    /* transform: scale(3) translate(-500px); */
-    opacity: 0;
-}
-.DeusEx div{
-    margin: auto 0;
-    padding: 10px;
-}
-.DeusEx a{
-    border: 1px solid #f4ab42;
-    background: transparent;
-    color: #f4ab42;
-    border-radius: 1rem;
-    font-size: 15px;
-    padding: 10px;
-    text-decoration: none;
-}
-@media(min-width: 768px){
-    .DeusEx{
-        flex-direction: row;
-    }
-    .DeusEx div{
-        width: 100%;
-    }
+    height: 100vh;
 }
 /**/
 .AboutUs{
@@ -104,93 +71,31 @@
     margin: 0;
 }
 /**/
-
-.Work{
-    background: linear-gradient(45deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/dist/back3.jpg);
-    background-size: cover;
-    background-position: 100% 100%;
-    color: #f4f4f4;
+.work{
     display: flex;
-    flex-direction: column;
-    text-align: center;
+    flex-direction: row;
+    background:black;
+    height: 100vh;
+    align-items: center;
 }
-.Work__block{
+.twoFace{
     display: flex;
-    flex-direction: column;
-}
-.Work__psiblock{
-    width: 100%;
-    margin: 15px 0;
-}
-.Work .logo p {
-    color: #291616;
-}
-
-@media(min-width: 768px){
-    .Work__block{
-        flex-direction: row;
+    img{
+        height: 59vh;
+        transition: 1s;
+    }
+    img:first-child{
+      transform: translateY(-10%);   
+    }
+    img:last-child{
+        transform: translateY(10%);   
     }
 }
-/**/
-.Table{
-    padding: 20px;
-    background: #520428;
-    color: white;
-}
-.Table form{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-.Table__info{
-    display: flex;
-    flex-direction:column;
-}
-input{
-    background: transparent;
-    border: 1px solid #ffffff;
-    color: #f3f3f3;
-    font-size: 20px;
-    padding: 10px;
-    margin: 10px 15px;
-}
-.Table textarea{
-    background: transparent;
-    border: 1px solid #ffffff;
-    color: #f3f3f3;
-    font-size: 20px;
-    padding: 10px;
-    margin: 10px 15px;
-    resize: none;
-    height: 150px;
-}
-.Table__button button{
-    background: #3b8daf;
-    border: none;
-    color: #f3f3f3;
-    font-size: 20px;
-    padding:10px 50px;
-    margin: 10px 15px;
-}
-@media (min-width: 768px){
-    .Table__info{
-        flex-direction:row;
-    }
-    input{
-        width:100%; 
-    }
-}
-/**/
-footer{
-    background: black;
-    display: flex;
-    justify-content: space-between;
-    color:#ffffff;
-    font-size: 15px;
-    padding: 10px;
-}
-footer i{
-    margin: auto 0;
-    font-size: 25px;
-    padding: 15px;
+.twoFace:hover{
+    img:first-child{
+        transform: translateY(0);   
+      }
+      img:last-child{
+          transform: translateY(0);   
+      }
 }

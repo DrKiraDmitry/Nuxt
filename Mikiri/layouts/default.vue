@@ -1,11 +1,11 @@
 <template>
-  <div>
-    <header class="row no-gutters justify-content-between">
-        <div class="logo col-4 col-xl-1 offset-1">
+  <div class="no-gutters">
+    <header class="col-10 offset-1 row no-gutters justify-content-between">
+        <div class="logo col-4 col-xl-1">
           <nuxt-link :to="{name: 'index'}">MIKIRI</nuxt-link>
         </div>
-        <div class="col-2 col-xl-4">
-          <svg id="menu__bar" v-on:click="menu = !menu" width="23" height="23"  viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div class="menu__link col-2 col-xl-6">
+          <svg id="menu__bar" @click="menu = !menu" width="23" height="23"  viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path :class="{bar1: menu}" d="M0 0.5H23" stroke="#FFE0E0"/>
               <path :class="{bar2: menu}" d="M0 11.246H23" stroke="#FFE0E0"/>
               <path :class="{bar3: menu}" d="M0 22H23" stroke="#FFE0E0"/>
@@ -13,7 +13,7 @@
           <div id="menu__mobile" :class="{menu__mobileon: menu}" class="menu">
               <nuxt-link :to="{name: 'index'}">Главная</nuxt-link>
               <nuxt-link :to="{name: 'second'}">Анимация и Js</nuxt-link>
-              <a href="#">Векторная Графика</a>
+              <a>Векторная Графика</a>
               <a href="#">Верстка и Api</a>
           </div>
         </div>
