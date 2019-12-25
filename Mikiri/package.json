@@ -1,5 +1,5 @@
 {
-  "name": "mikiri",
+  "name": "synergy",
   "version": "1.0.0",
   "description": "My impressive Nuxt.js project",
   "author": "dima",
@@ -17,7 +17,5 @@
     "sass": "^1.23.7",
     "sass-loader": "^8.0.0"
   },
-  "devDependencies": {
-    
-  }
+  "devDependencies": {}
 }

@@ -7,12 +7,13 @@ header{
     justify-content: space-between;
     left: 0;
     right: 0;
-    color: #f4ab42;
+    color: #f2f2f2;
     align-items: center;
     .logo{
         justify-content: flex-start;
         a{
-            color: #f4ab42;
+            font-family: 'Lato', serif;
+            color: #f2f2f2;
             text-decoration: none;
         }
     }
@@ -42,7 +43,7 @@ header{
     padding: 10px 0px;
     margin: 0px 10px;
     text-decoration: none;
-    color: #f4ab42;
+    color: #f2f2f2;
     white-space: nowrap;
 }
 @media(min-width: 425px){
@@ -50,7 +51,7 @@ header{
         top: 25px;
     }
 }
-@media(min-width:1024px){
+@media(min-width:1200px){
     /* header{
         border-bottom: 1px solid rgb(49, 49, 49);
     } */

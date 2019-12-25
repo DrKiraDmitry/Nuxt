@@ -11,24 +11,4 @@
     /* transform: scale(3) translate(-500px); */
     opacity: 0;
 }
-.DeusEx div{
-    margin: auto 0;
-    padding: 10px;
-}
-.DeusEx a{
-    border: 1px solid #f4ab42;
-    background: transparent;
-    color: #f4ab42;
-    border-radius: 1rem;
-    font-size: 15px;
-    padding: 10px;
-    text-decoration: none;
-}
-@media(min-width: 768px){
-    .DeusEx{
-        flex-direction: row;
-    }
-    .DeusEx div{
-        width: 100%;
-    }
-}
+

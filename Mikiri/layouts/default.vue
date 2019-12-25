@@ -2,7 +2,7 @@
   <div class="no-gutters">
     <header class="col-10 offset-1 row no-gutters justify-content-between">
         <div class="logo col-4 col-xl-1">
-          <nuxt-link :to="{name: 'index'}">MIKIRI</nuxt-link>
+          <nuxt-link :to="{name: 'index'}">SYNERGY</nuxt-link>
         </div>
         <div class="menu__link col-2 col-xl-6">
           <svg id="menu__bar" @click="menu = !menu" width="23" height="23"  viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">

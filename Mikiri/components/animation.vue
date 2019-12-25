@@ -1,6 +1,6 @@
 <template>
     <div>
-        <svg id="DeusE" viewBox="0 0 741 1102" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg ref="DeusE"  viewBox="0 0 741 1102" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M452 1H385.5L467.553 62L452 1Z" fill="#F4AB41" stroke="black"/>
               <path d="M506.5 16.5C506.5 10.9 470.167 3.83333 452 1L467.553 62L506.5 16.5Z" fill="#F4AB41" stroke="black"/>
               <path d="M516.5 42.5C513.167 36.1667 506.5 22.1 506.5 16.5L467.553 62L516.5 42.5Z" fill="#F4AB41" stroke="black"/>
@@ -225,6 +225,7 @@
 </template>
 
 <script>
+
 export default {
     methods:{
         animations(){
@@ -232,20 +233,22 @@ export default {
             let i=0;
             let tumbler=0;
             let delay= 0;
-            console.log(d)
+            let timer = setInterval(deus, 100);
+            let user = this.$refs.DeusE
+
             function deus(){
                 if(delay<100){
                     delay++;
                 }
-                else
-                if(delay=100){
-                    if(tumbler==0 && document.getElementById('DeusE').children !== null){
-                        document.getElementById('DeusE').children[i].classList.add('DeusExx');
-                        i++;
+                else 
+                if(delay == 100){
+                    if(tumbler == 0){
+                        user.children[i].classList.add('DeusExx')
+                        i++
                     }
-                    else if(tumbler==1 && document.getElementById('DeusE').children !== null){
-                        document.getElementById('DeusE').children[i-1].classList.remove('DeusExx');
-                        i--;
+                    else if(tumbler == 1){
+                        user.children[i-1].classList.remove('DeusExx')
+                        i--
                     };
                     if(i==d){
                         tumbler++;
@@ -258,8 +261,10 @@ export default {
                 }
                 
             };
-            setInterval(deus, 100);
         }
     },
+    mounted(){
+        this.animations()
+    }
 }
 </script>
