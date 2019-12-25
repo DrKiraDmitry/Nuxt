@@ -1,89 +1,4 @@
-.DeusEx{
-    background: black;
-    display: flex;
-    color: #f4ab42;
-    padding: 50px 0;
-    height: 100vh;
-    align-items: center;
-}
-.DeusEx div{
-    padding: 10px;
-}
-.DeusEx a{
-    border: 1px solid #f4ab42;
-    background: transparent;
-    color: #f4ab42;
-    border-radius: 1rem;
-    font-size: 15px;
-    padding: 10px;
-    text-decoration: none;
-}
-/**/
-.AboutUs{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 50px 0;
-    background: #520428;
-    color: #f4f4f4;
-}
-.AboutUs button{
-    background: #520428;
-    border: 2px solid #848bee;
-    border-radius: 0.5rem;
-    margin: auto;
-    font-size: 20px;
-    color: whitesmoke;
-}
-/*Карточки*/
-.block{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    position: relative;
-}
-.block img{
-    width: 100%;
-    height: 100%; 
-}
-.block__content{
-    position: absolute;
-    background: linear-gradient(45deg, rgba(47, 42, 78, .8), rgba(80, 63, 118, .1));
-    padding: 10px;
-    width: 100%;
-}
-.block__content h1{
-    font-size: 20px;
-}
-.block__content p{
-    display: none;
-}
-/**/
-
-/**/
-.logo{
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    // padding: 10px;
-}
-.logo__text{
-    position:absolute;
-    margin: 0;
-    font-size: 35px;
-}
-.outside{
-    display: inline-block;
-    position: relative;
-    font-size: 200px;
-    color: #670a35;
-    margin: 0;
-}
-/**/
-.work{
-    display: flex;
-    flex-direction: row;
+.index{
     background: linear-gradient(270deg, #833ab4, #f75757);
     background-size: 400% 400%;
 
@@ -106,6 +21,32 @@
         50%{background-position:100% 51%}
         100%{background-position:0% 50%}
     }
+}
+.DeusEx{
+    background: black;
+    display: flex;
+    color: #f4ab42;
+    padding: 50px 0;
+    height: 100vh;
+    align-items: center;
+}
+.DeusEx div{
+    padding: 10px;
+}
+.DeusEx a{
+    border: 1px solid #f4ab42;
+    background: transparent;
+    color: #f4ab42;
+    border-radius: 1rem;
+    font-size: 15px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+/**/
+.synergy{
+    display: flex;
+    flex-direction: row;
     height: 100vh;
     align-items: center;
     color: #f2f2f2;
@@ -131,4 +72,26 @@
       img:last-child{
           transform: translateY(0);   
       }
+}
+.index__psychology{
+    img{
+        animation: psyc 2s infinite alternate;
+        @keyframes psyc {
+            0%{
+                transform: rotateY(0deg);
+            }
+            25%{
+                transform: rotateY(-30deg);
+            }
+            50%{
+                transform: rotateY(0deg);
+            }
+            75%{
+                transform: rotateY(30deg);
+            }
+            100%{
+                transform: rotateY(30deg);
+            }
+        }
+    }
 }

@@ -229,16 +229,16 @@
 export default {
     methods:{
         animations(){
-            let d= 219;
-            let i=0;
-            let tumbler=0;
-            let delay= 0;
-            let timer = setInterval(deus, 100);
+            let i=0
+            let tumbler=0
+            let delay= 0
+            let timer = setInterval(deus, 100)
             let user = this.$refs.DeusE
+            let d= user.childElementCount
 
             function deus(){
                 if(delay<100){
-                    delay++;
+                    delay++
                 }
                 else 
                 if(delay == 100){
@@ -251,12 +251,12 @@ export default {
                         i--
                     };
                     if(i==d){
-                        tumbler++;
-                        delay=0;
+                        tumbler++
+                        delay=0
                     };
                     if(i==0){
-                        tumbler--;
-                        delay=0;
+                        tumbler--
+                        delay=0
                     };
                 }
                 
