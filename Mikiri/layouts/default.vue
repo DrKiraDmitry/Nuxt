@@ -13,7 +13,7 @@
           <div id="menu__mobile" :class="{menu__mobileon: menu}" class="menu">
               <nuxt-link :to="{name: 'index'}">Главная</nuxt-link>
               <nuxt-link :to="{name: 'second'}">Анимация и Js</nuxt-link>
-              <a>Векторная Графика</a>
+              <nuxt-link :to="{name: 'psi'}">Анимация и Js</nuxt-link>
               <a href="#">Верстка и Api</a>
           </div>
         </div>

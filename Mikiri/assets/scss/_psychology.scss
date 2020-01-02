@@ -1,0 +1,39 @@
+.index__psychology{
+    align-items: center;
+    height: 100vh;
+    div{
+        perspective: 200px;
+    }
+    img{
+        max-width: 450px;
+        width: 100%;
+        animation: psyc 8s infinite alternate ease-in-out;
+        @keyframes psyc {
+            0%{
+                transform: rotateY(10deg);
+            }
+            // 1%{
+            //     transform: rotateY(10deg);
+            // }
+            // 99%{
+            //     transform: rotateY(-15deg);
+            // }
+            100%{
+                transform: rotateY(-15deg);
+            }
+        }
+    }
+}
+.index__psychology__table{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+}
+.index__psychology__toggle{
+    display: flex;
+    flex-direction: column;
+    a{
+        padding: 10px;
+        background: blueviolet;
+    }
+}

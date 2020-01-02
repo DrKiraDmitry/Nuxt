@@ -2,8 +2,8 @@
     <div class="index">
         <div class="synergy row no-gutters">
             <div class="twoFace col-8 col-xl-4 offset-1">
-                <img src="~/assets/img/twoFaceD.png" alt="">
                 <img src="~/assets/img/twoFace.png" alt="">
+                <img src="~/assets/img/twoFaceD.png" alt="">
             </div>
             <div class="col-xl-4 col-10 offset-xl-2 offset-1">
                 <h3>Синергия</h3>
