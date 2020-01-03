@@ -1,10 +1,8 @@
-.index{
+.synergy, .index__psychology{
     background: linear-gradient(270deg, #833ab4, #f75757);
     background-size: 400% 400%;
 
-    -webkit-animation: AnimationName 13s ease infinite;
-    -moz-animation: AnimationName 13s ease infinite;
-    animation: AnimationName 13s ease infinite;
+    animation: AnimationName 13s infinite;
 
     @-webkit-keyframes AnimationName {
         0%{background-position:0% 50%}

@@ -25,15 +25,17 @@
             <div class="index__psychology__table col-10 offset-1">
                 <div class="index__psychology__toggle">
                     <a @click="id = user.id" v-for="(user, index) in users" :key="index" :class="{active: id == user.id}">
-                        {{user.id}}
+                        {{user.head}}
                     </a>
                 </div>
                 <div class="index__psychology__body" v-for="(user, index) in users" :key="index" v-show="id == user.id">
-                    <img :src="user.img" alt="">
-                    <div>
+                    <div class="perspective">
+                        <img :src="user.img" alt="">
+                    </div>
+                    <div class="index__psychology__body__text">
                         <h3>{{user.title}}</h3>
                         <p v-for="(index, data) in user.data" :key="data">{{index.p}}</p>
-                    </div>
+                    </div>                  
                 </div>
             </div>
         </div>
@@ -52,25 +54,29 @@ export default {
             users:[
                 {
                 id: 1,
-                title: "delectus aut autem2",
+                head:"Оглавление",
+                title: "Игры в которые играю люди",
                 img: "/_nuxt/assets/img/psi31.png",
-                data: [{"p":1},{"p":5}]
+                data: [{"p":"Ответ на то, как и почему это происходит, дает трансакционный или трансактный анализ – психологическая модель, разработанная американским психологом Эриком Берном. Он изложил ее в своих книгах о психологии взаимоотношений: «Игры, в которые играют люди» и «Люди, которые играют в игры»"},{"p":5}]
                 },
                 {
                 id: 2,
-                title: "delectus aut autem2",
-                img: "/_nuxt/assets/img/psi31.png",
+                head:"Я-ребенок",
+                title: "Я-ребенок",
+                img: "/_nuxt/assets/img/child.png",
                 data: [{"p":1},{"p":3},{"p":5}]
                 },
                 {
                 id: 3,
-                title: "delectus aut autem2",
+                head:"Я-родитель",
+                title: "Я-родитель",
                 img: "/_nuxt/assets/img/psi31.png",
                 data: [{"p":1},{"p":3},{"p":5}]
                 },
                 {
                 id: 4,
-                title: "delectus aut autem2",
+                head:"Я-взрослый",
+                title: "Я-взрослый",
                 img: "/_nuxt/assets/img/psi31.png",
                 data: [{"p":1},{"p":3},{"p":5}]
                 },
